@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   root 'meals#index'
+  get '/sessions/new' => 'sessions#new', as: :login
+  get '/users/new' => 'users#new', as: :signup
   patch 'ingredients/:id/update_list' => 'ingredients#add_or_remove_list', as: :update_list
   resources :meals do
     resources :ingredients
