@@ -18,6 +18,11 @@
     <% end %>
   </nav>
 
+    <% if !flash.empty? %>
+        <% flash.each do |key, value| %><%= value %>
+        <% end %>
+    <% end %>
+    
 <%= yield %>
 
 </body>

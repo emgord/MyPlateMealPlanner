@@ -1,4 +1,5 @@
 class Meal < ActiveRecord::Base
+  belongs_to :user
   has_many :ingredients
 
   DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
