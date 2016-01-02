@@ -1,6 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe MealsController, type: :controller do
+
+  let(:meal) do
+    Meal.create(meal: "Dinner", day: "Saturday", meal_name: "Lasagna", description: "Yum")
+  end
+
   describe "GET #index" do
     it "renders the index view" do
       get :index
@@ -15,12 +20,11 @@ RSpec.describe MealsController, type: :controller do
     end
   end
 
-
   describe "POST 'create'" do
       let(:params) do
         {
           meal: {
-            name: "Dinner",
+            meal: "Dinner",
             day: "Friday",
             meal_name: "Mac and Cheese",
             description: "Mmm...cheese"
@@ -33,5 +37,30 @@ RSpec.describe MealsController, type: :controller do
         expect(subject).to redirect_to meal_path(1)
       end
     end
+
+    describe "GET 'show'" do
+      it "renders the show view" do
+        get :show, id: meal.id
+        expect(subject).to render_template :show
+      end
+    end
+
+    describe "PATCH 'update'" do
+        let(:updated_params) do
+          {
+            meal: {
+              meal: "Dinner",
+              day: "Friday",
+              meal_name: "Mac and Cheese",
+              description: "Now even cheesier!"
+            }
+          }
+        end
+
+        it "redirects to the show view" do
+          post :create, updated_params
+          expect(subject).to redirect_to meal_path(1)
+        end
+      end
 
 end
