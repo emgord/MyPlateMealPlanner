@@ -77,4 +77,11 @@ RSpec.describe MealsController, type: :controller do
     end
   end
 
+  describe "GET 'shopping_list'" do
+  it "renders the shopping list view" do
+    get :shopping_list
+    expect(subject).to render_template :shopping_list
+  end
+end
+
 end
