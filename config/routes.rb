@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
   root 'meals#index'
+  get '/sessions/new' => 'sessions#new', as: :login
+  get '/users/new' => 'users#new', as: :signup
+  get "/logout" => "sessions#destroy", as: :logout
   patch 'ingredients/:id/update_list' => 'ingredients#add_or_remove_list', as: :update_list
   resources :meals do
     resources :ingredients
@@ -8,6 +11,8 @@ Rails.application.routes.draw do
         get 'shopping_list', as: :list
       end
   end
+  resources :sessions, :only => [:new, :create]
+  resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

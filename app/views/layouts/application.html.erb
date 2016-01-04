@@ -8,10 +8,21 @@
 </head>
 <body>
   <nav>
-    <%= link_to "Meal Plan", meals_path %>
-    <%= link_to "Shopping List", list_meals_path %>
+    <% if @current_user %>
+      <%= link_to "Meal Plan", meals_path(@current_user) %>
+      <%= link_to "Shopping List", list_meals_path(@current_user) %>
+      <%= link_to "Logout", logout_path %>
+    <% else %>
+      <%= link_to "Login", login_path %>
+      <%= link_to "Sign Up", signup_path %>
+    <% end %>
   </nav>
 
+    <% if !flash.empty? %>
+        <% flash.each do |key, value| %><%= value %>
+        <% end %>
+    <% end %>
+    
 <%= yield %>
 
 </body>
