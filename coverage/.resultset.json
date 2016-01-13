@@ -1,20 +1,34 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/MyPlateMealPlanner/app/helpers/application_helper.rb": [
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/MyPlateMealPlanner/app/helpers/ingredients_helper.rb": [
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/helpers/ingredients_helper.rb": [
         1,
         null
       ],
-      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/MyPlateMealPlanner/app/helpers/meals_helper.rb": [
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/helpers/meals_helper.rb": [
         1,
         null
       ],
-      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/MyPlateMealPlanner/app/controllers/ingredients_controller.rb": [
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/helpers/sessions_helper.rb": [
         1,
+        null
+      ],
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/controllers/ingredients_controller.rb": [
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
         null,
         1,
         0,
@@ -58,25 +72,27 @@
         null,
         null
       ],
-      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/MyPlateMealPlanner/app/controllers/application_controller.rb": [
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
+        1,
+        null,
+        1,
+        7,
+        0,
+        null,
+        null,
         null
       ],
-      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/MyPlateMealPlanner/app/controllers/meals_controller.rb": [
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/controllers/meals_controller.rb": [
         1,
         null,
         1,
         1,
         null,
         null,
-        1,
-        1,
-        null,
-        null,
-        1,
         1,
         1,
         null,
@@ -111,14 +127,76 @@
         null,
         null
       ],
-      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/MyPlateMealPlanner/app/models/ingredient.rb": [
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/controllers/users_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/models/ingredient.rb": [
         1,
         1,
         null,
         1,
         null
       ],
-      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/MyPlateMealPlanner/app/models/meal.rb": [
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/models/meal.rb": [
+        1,
         1,
         1,
         null,
@@ -154,8 +232,25 @@
         null,
         null,
         null
+      ],
+      "/Users/emilygordon/Ada/project-forks/MyPlateMealPlanner/app/models/user.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1451712721
+    "timestamp": 1452660542
   }
 }

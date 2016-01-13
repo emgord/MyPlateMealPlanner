@@ -38,6 +38,7 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails' #for testing
   gem 'simplecov', require: false
+  gem 'factory_girl_rails'
 end
 
 group :development do
